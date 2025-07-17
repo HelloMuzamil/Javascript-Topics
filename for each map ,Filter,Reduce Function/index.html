@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Methods Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Methods Visualizer</h1>
+
+        <div class="input-section">
+            <label for="userInput">Enter a String:</label>
+            <input type="text" id="userInput" placeholder="Enter text here">
+            <button onclick="updateVisualizations()">Update Visualizations</button>
+        </div>
+
+        <div id="output">
+            <h2>Array Methods:</h2>
+            <p><strong>push()</strong>: Adds one or more elements to the end of an array. <span id="pushResult"></span></p>
+            <p><strong>pop()</strong>: Removes the last element from an array. <span id="popResult"></span></p>
+            <p><strong>shift()</strong>: Removes the first element from an array. <span id="shiftResult"></span></p>
+            <p><strong>unshift()</strong>: Adds one or more elements to the beginning of an array. <span id="unshiftResult"></span></p>
+            <p><strong>concat()</strong>: Merges two or more arrays. <span id="concatResult"></span></p>
+            <p><strong>join()</strong>: Converts an array to a string. <span id="joinResult"></span></p>
+            <p><strong>slice()</strong>: Extracts a portion of an array. <span id="sliceResult"></span></p>
+            <p><strong>splice()</strong>: Adds/removes elements at a specified index. <span id="spliceResult"></span></p>
+            <p><strong>indexOf()</strong>: Finds the first index of an element. <span id="indexOfResult"></span></p>
+            <p><strong>lastIndexOf()</strong>: Finds the last index of an element. <span id="lastIndexOfResult"></span></p>
+            <p><strong>includes()</strong>: Checks if an element exists in an array. <span id="includesResult"></span></p>
+            <p><strong>find()</strong>: Finds the first element matching a condition. <span id="findResult"></span></p>
+            <p><strong>findIndex()</strong>: Finds the index of the first element matching a condition. <span id="findIndexResult"></span></p>
+            <p><strong>filter()</strong>: Returns all elements that match a condition. <span id="filterResult"></span></p>
+            <p><strong>map()</strong>: Transforms each element in an array. <span id="mapResult"></span></p>
+            <p><strong>reduce()</strong>: Reduces the array to a single value. <span id="reduceResult"></span></p>
+            <p><strong>reduceRight()</strong>: Reduces the array from right to left. <span id="reduceRightResult"></span></p>
+            <p><strong>sort()</strong>: Sorts the elements of an array. <span id="sortResult"></span></p>
+            <p><strong>reverse()</strong>: Reverses the order of elements. <span id="reverseResult"></span></p>
+            <p><strong>forEach()</strong>: Executes a function for each element. <span id="forEachResult"></span></p>
+            <p><strong>every()</strong>: Checks if all elements satisfy a condition. <span id="everyResult"></span></p>
+            <p><strong>some()</strong>: Checks if at least one element satisfies a condition. <span id="someResult"></span></p>
+            <p><strong>fill()</strong>: Fills an array with a specified value. <span id="fillResult"></span></p>
+            <p><strong>copyWithin()</strong>: Copies a portion of an array to another location. <span id="copyWithinResult"></span></p>
+            <p><strong>flat()</strong>: Flattens nested arrays into a single array. <span id="flatResult"></span></p>
+            <p><strong>flatMap()</strong>: Maps and flattens the result in one step. <span id="flatMapResult"></span></p>
+
+            <h2>String Methods:</h2>
+            <p><strong>charAt()</strong>: Returns the character at a specific index. <span id="charAtResult"></span></p>
+            <p><strong>charCodeAt()</strong>: Returns the Unicode of the character at a specific index. <span id="charCodeAtResult"></span></p>
+            <p><strong>concat()</strong>: Joins two or more strings. <span id="concatStringResult"></span></p>
+            <p><strong>includes()</strong>: Checks if a substring exists within a string. <span id="includesStringResult"></span></p>
+            <p><strong>indexOf()</strong>: Finds the position of the first occurrence of a substring. <span id="indexOfStringResult"></span></p>
+            <p><strong>lastIndexOf()</strong>: Finds the position of the last occurrence of a substring. <span id="lastIndexOfStringResult"></span></p>
+            <p><strong>match()</strong>: Finds matches using a regular expression. <span id="matchResult"></span></p>
+            <p><strong>replace()</strong>: Replaces a substring or match with a new string. <span id="replaceResult"></span></p>
+            <p><strong>replaceAll()</strong>: Replaces all occurrences of a substring. <span id="replaceAllResult"></span></p>
+            <p><strong>search()</strong>: Searches for a match using a regular expression. <span id="searchResult"></span></p>
+            <p><strong>slice()</strong>: Extracts a portion of a string. <span id="sliceStringResult"></span></p>
+            <p><strong>split()</strong>: Splits a string into an array of substrings. <span id="splitResult"></span></p>
+            <p><strong>substring()</strong>: Extracts a substring between two indexes. <span id="substringResult"></span></p>
+            <p><strong>substr()</strong>: Extracts a substring (deprecated). <span id="substrResult"></span></p>
+            <p><strong>toLowerCase()</strong>: Converts a string to lowercase. <span id="toLowerCaseResult"></span></p>
+            <p><strong>toUpperCase()</strong>: Converts a string to uppercase. <span id="toUpperCaseResult"></span></p>
+            <p><strong>trim()</strong>: Removes whitespace from both ends of a string. <span id="trimResult"></span></p>
+            <p><strong>trimStart()</strong>: Removes leading whitespace from a string. <span id="trimStartResult"></span></p>
+            <p><strong>trimEnd()</strong>: Removes trailing whitespace from a string. <span id="trimEndResult"></span></p>
+            <p><strong>padStart()</strong>: Pads the start of a string with a specified character. <span id="padStartResult"></span></p>
+            <p><strong>padEnd()</strong>: Pads the end of a string with a specified character. <span id="padEndResult"></span></p>
+            <p><strong>repeat()</strong>: Repeats a string a specified number of times. <span id="repeatResult"></span></p>
+            <p><strong>localeCompare()</strong>: Compares two strings lexicographically. <span id="localeCompareResult"></span></p>
+
+            <h2>Function Methods:</h2>
+            <p><strong>call()</strong>: Invokes a function with a specified context. <span id="callResult"></span></p>
+            <p><strong>apply()</strong>: Invokes a function with arguments as an array. <span id="applyResult"></span></p>
+            <p><strong>bind()</strong>: Creates a new function with a specific context. <span id="bindResult"></span></p>
+            <p><strong>toString()</strong>: Converts a function to a string representation. <span id="toStringResult"></span></p>
+            <p><strong>length</strong>: Returns the number of parameters the function accepts. <span id="lengthResult"></span></p>
+            <p><strong>name</strong>: Returns the name of the function. <span id="nameResult"></span></p>
+            <p><strong>arrow function</strong>: Defines a function in a shorter syntax. <span id="arrowFunctionResult"></span></p>
+        </div>
+    </div>
+
+   
+</body>
+</html>
