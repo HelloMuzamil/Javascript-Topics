@@ -146,6 +146,43 @@
 
 // let a = undefined;
 // console.log(a); // This will log 'undefined' because 'a' is declared but not initialized 
+let arr= [1, 9, 5, 4, 54,7,8];
+// arr.splice(3,2);
+// console.log(arr); // This will log [1, 2, 3, 7, 8] because the elements at index 3 and 4 (which are 4 and 54) have been removed
+// arr.sort(function (a,b){
+//     return a-b;
+// })
+// console.log(arr); 
 
-console.log( a); 
-let a =10;
+// arr.forEach(function(value,index){
+//     console.log("Element at index " + index + ": " + value);
+// }); 
+
+// arr.forEach(function (value){
+//     console.log(value+5);
+// })
+// console.log(arr); // This will log the original array [1, 9, 5, 4, 54, 7, 8] because forEach does not modify the array
+
+let words = ["hello", "world", "JavaScript"];
+let upperCaseWords = words.map(function(word) {
+    return word.toUpperCase();
+});
+console.log(upperCaseWords); // This will log ["HELLO", "WORLD", "JAVASCRIPT"] because map creates a new array with the results of calling a provided function on every element in the calling array
+
+let filtering = words.filter(function(word){
+    return word.length>6;
+});
+console.log(filtering); // This will log ["JavaScript"] because filter creates a new array with all elements that pass the test implemented by the provided function
+
+let words2 = ["hello", "world", "JavaScript"];
+
+let filteringWithMap = words2.map(function(word) {
+    if (word.length > 6) {
+        return word;
+    } else {
+        return null;
+    }
+});
+
+
+console.log(filteringWithMap); // [null, null, "JavaScript"] yha deikho null,null print horha islia  yha filter use krna chahiya jo array ki condition puri kry ga bss usy hi print kry ga 
