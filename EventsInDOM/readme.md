@@ -1,4 +1,4 @@
-Bilkul! Yahaan ek beginner-friendly `README.md` file banayi gayi hai jo **JavaScript Event Listeners** ke baare mein hai — specially tum jaise beginner ke mind mein jo bhi confusion ho sakti hai usko cover karte hue likhi gayi hai:
+
 
 ---
 
@@ -172,6 +172,3 @@ btn.addEventListener("click", function () {
 ```
 
 ---
-
-If you want this saved as a `.md` file, I can generate and share that too. Bss btana.
-Agar tum isko aur bhi zyada beginner-level cheezon se expand karna chahtay ho (jaise `mouseenter`, `dblclick`, etc.) to woh bhi add kar sakta hu.
