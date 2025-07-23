@@ -88,3 +88,8 @@
 
 // let a=document.querySelector("a");
 // a.setAttribute("href", "https://www.google.com");
+
+let lis = document.querySelectorAll("li");
+lis.forEach(function(val){
+    console.log(val.innerText);
+})
