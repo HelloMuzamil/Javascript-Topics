@@ -130,4 +130,3 @@ element.onclick = function() { ... }
 ```
 
 ---
-
