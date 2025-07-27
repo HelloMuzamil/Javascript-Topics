@@ -23,16 +23,12 @@ input	When value is typed/changed
 ❓2. "Function ke andar logic kaise likhna hai?"
 Wo kaam depend karta hai tumhara goal kya hai. Jaise:
 
-js
-Copy
-Edit
+
 button.addEventListener("click", function () {
   alert("You clicked the button!");
 });
 ❓3. "Ek button click pr koi div hide/show kaise hota hai?"
-js
-Copy
-Edit
+
 let btn = document.getElementById("toggleBtn");
 let box = document.getElementById("myBox");
 let visible = true;
@@ -60,9 +56,7 @@ display: none — completely hides, element is not even there
 visibility: hidden — hides but still takes space
 
 📱 Responsive Menu Example (Show on mobile only)
-html
-Copy
-Edit
+
 <!-- HTML -->
 <button id="menuBtn">☰</button>
 <ul id="menuList">
@@ -118,14 +112,9 @@ leftBtn.addEventListener("click", () => {
 📌 += 200 → Move right by 200 pixels
 📌 -= 200 → Move left by 200 pixels
 
-📎 Tips for Practicing:
-Try mouseover, keyup, input, focus, etc.
 
-Console log har function ke andar karo:
 
-js
-Copy
-Edit
+
 console.log("User clicked button");
 Use flags like let isOpen = true; to toggle things
 
@@ -185,9 +174,7 @@ dragover	Item is dragged over a target
 drop	Item is dropped
 
 1. Click Event (click)
-html
-Copy
-Edit
+
 <button id="btn">Click Me</button>
 <script>
   document.getElementById("btn").addEventListener("click", function() {
@@ -195,9 +182,7 @@ Edit
   });
 </script>
 2. Mouse Events Example
-html
-Copy
-Edit
+
 <div id="box" style="width:100px; height:100px; background:red;"></div>
 <script>
   let box = document.getElementById("box");
@@ -205,9 +190,7 @@ Edit
   box.addEventListener("mouseout", () => box.style.background = "red");
 </script>
 3. Keyboard Events Example
-html
-Copy
-Edit
+
 <input type="text" id="input" placeholder="Type here">
 <p id="log"></p>
 <script>
@@ -218,9 +201,7 @@ Edit
   });
 </script>
 4. Change Event Example
-html
-Copy
-Edit
+
 <select id="device">
   <option>Choose</option>
   <option>Mobile</option>
@@ -232,9 +213,7 @@ Edit
   });
 </script>
 5. Focus & Blur Example
-html
-Copy
-Edit
+
 <input type="text" id="name" placeholder="Enter name">
 <p id="hint" style="display:none;">Name must be at least 3 characters</p>
 <script>
@@ -244,9 +223,7 @@ Edit
   name.addEventListener("blur", () => hint.style.display = "none");
 </script>
 6. Input Event Example
-html
-Copy
-Edit
+
 <input type="text" id="search" placeholder="Type something...">
 <p id="live"></p>
 <script>
@@ -255,9 +232,7 @@ Edit
   });
 </script>
 7. Submit Event Example
-html
-Copy
-Edit
+
 <form id="myForm">
   <input type="text" required>
   <button type="submit">Submit</button>
@@ -269,21 +244,15 @@ Edit
   });
 </script>
 8. Load Event Example
-html
-Copy
-Edit
+
 <body onload="alert('Page fully loaded!')">
 9. Scroll Event Example
-html
-Copy
-Edit
+
 window.addEventListener("scroll", () => {
   console.log("Scrolled: ", window.scrollY);
 });
 10. Double Click Event Example
-html
-Copy
-Edit
+
 <p id="para">Double-click to change text</p>
 <script>
   document.getElementById("para").addEventListener("dblclick", function() {
@@ -291,9 +260,7 @@ Edit
   });
 </script>
 11. Resize Event Example
-html
-Copy
-Edit
+
 window.addEventListener("resize", function() {
   console.log("Width:", window.innerWidth);
 });
