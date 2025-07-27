@@ -3,26 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  
+  <title>Interactive UI</title>
   <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Dark Mode Toggle -->
+  <!-- *************************************
+       1. Dark Mode Toggle Button
+  ************************************** -->
+  <!-- 
   <button id="darkmode">
     <i class="ri-contrast-2-line"></i>
-  </button>
+  </button> 
+  -->
 
-  <!-- Message Toggle -->
+  <!-- *************************************
+       2. Message Show/Hide Toggle
+  ************************************** -->
+  <!-- 
   <p id="message">Hello World</p>
-  <button id="toggleBtn">Hide</button>
+  <button id="toggleBtn">Hide</button> 
+  -->
 
-  <!-- Menu Show/Hide -->
+  <!-- *************************************
+       3. Menu Show/Hide Toggle
+  ************************************** -->
+  <!-- 
   <div id="showmenu">
     <ul id="menulist">
       <li>Home</li>
@@ -32,13 +39,17 @@
     <button id="menu">
       <i class="ri-menu-line"></i>
     </button>
-  </div>
+  </div> 
+  -->
 
-  <!-- Horizontal Scrollable Image Bar -->
+  <!-- *************************************
+       4. Horizontal Scrollable Image Bar
+  ************************************** -->
+  <!-- 
   <div class="container">
     <button id="leftBtn">⬅️</button>
     <div class="image-scroll" id="scrollBox">
-      <img src="" alt="">
+      <img src="Untitled design.png" alt="">
       <img src="Untitled design.png" alt="">
       <img src="Untitled design.png" alt="">
       <img src="Untitled design.png" alt="">
@@ -49,7 +60,74 @@
       <img src="Untitled design.png" alt="">
     </div>
     <button id="rightBtn">➡️</button>
+  </div> 
+  -->
+
+  <!-- *************************************
+       5. Dropdown Device Selection
+  ************************************** -->
+  <!-- 
+  <h1 id="heading">Select Your Device</h1>
+  <select id="selection">
+    <option selected disabled>Choose your Device</option>
+    <option value="apple">Apple</option>
+    <option value="xiami">Xiaomi</option>
+    <option value="oppo">Oppo</option>
+    <option value="readme">Readme</option>
+  </select> 
+  -->
+
+  <!-- *************************************
+       6. Keypress Display & Typing Game
+  ************************************** -->
+  <!-- 
+  <div id="main">
+    <h1 id="heading">a</h1> 
+    <h2 id="showWord">code</h2>
+  </div> 
+  -->
+
+  <!-- *************************************
+       7. Form Submit to Create Card
+  ************************************** -->
+  <!-- 
+  <div id="main">
+    <form id="form">
+      <input id="name" type="text" placeholder="Enter Your Name">
+      <input id="phone" type="text" placeholder="Enter Your Phone">
+      <input id="occu" type="text" placeholder="Enter Your Occupation">
+      <input id="button" type="submit" value="Submit">
+    </form>
+  </div> 
+  -->
+
+  <!-- *************************************
+       8. Mouseover Example Box
+  ************************************** -->
+  <!-- 
+  <div id="div">
+    Follow me
+  </div> 
+  -->
+
+  <!-- *************************************
+       9. Floating Image on Paragraph Hover
+  ************************************** -->
+  <div id="main">
+    <p image-tag="Untitled design.png">This is paragraph 1</p>
+    <p image-tag="Untitled design.png">This is paragraph 2</p>
+    <p image-tag="Untitled design.png">This is paragraph 3</p>
   </div>
+
+  <!-- *************************************
+       10. Floating Text + Image Tooltip
+  ************************************** -->
+  <div id="main1">
+    <p data-img="Untitled design.png">Paragraph 1</p>
+    <p data-img="https://via.placeholder.com/100/0000FF">Paragraph 2</p>
+    <p data-img="https://via.placeholder.com/100/FF0000">Paragraph 3</p>
+  </div>
+
 
   <script src="Script.js"></script>
 </body>
